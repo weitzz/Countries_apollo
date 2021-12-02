@@ -1,36 +1,18 @@
-import './App.css';
-// import {useEffect} from 'react'
-// import {client} from './config/client-graphql'
-// import {gql} from '@apollo/client'
-
+import './style/global.scss'
+import Cards from './components/Cards';
+import Header from './components/Header'
+import { ApolloProvider } from '@apollo/client'
+import { client } from './config/client-graphql';
+import { CountriesContextProvider } from './context/CountriesContext';
 function App() {
-  // useEffect(()=>{
-  //   initial()
-  // },[])
-
-  // function initial(){
-  //   client.query({
-  //     query: gql`
-  //     query{ 
-  //       countries{
-  //         name
-  //          capital
-  //         emoji
-  //         languages{
-  //           name
-  //         }
-  //         currency
-  //       }
-  //       }
-  //     `
-  //   }).then(res => console.log(res))
-  // }
-
 
   return (
-    <div className="App">
-        
-    </div>
+    <ApolloProvider client={client}>
+      <Header />
+      <CountriesContextProvider>
+        <Cards />
+      </CountriesContextProvider>
+    </ApolloProvider>
   );
 }
 

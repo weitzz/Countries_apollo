@@ -1,0 +1,13 @@
+.container-loading{
+  width: 800px;
+  height: 800px;
+  margin:  30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 15px rgba(100,100,100,0.5);
+
+  h1{
+    font-size: 3rem;
+  }
+}

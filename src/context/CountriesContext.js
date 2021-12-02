@@ -1,6 +1,6 @@
 import { useQuery } from "@apollo/client";
 import { createContext, useContext } from "react";
-import { GET_COUNTRIES } from "../../graphql";
+import { GET_COUNTRIES } from "../graphql";
 
 const MyContext = createContext()
 
