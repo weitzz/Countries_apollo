@@ -11,6 +11,8 @@ Execute ```npm install``` na pasta dahorta para instalar as dependências.
 
 Rode ```npm start``` na pasta dahorta. Acesse via **localhost:3000**.
 
+Utilizei esta API : https://countries.trevorblades.com/
+
 ## :zap: Ferramentas utilizadas:
 - React
 - Sass
